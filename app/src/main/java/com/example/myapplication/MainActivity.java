@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         this.createBookingBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, CreateBookingActivity.class);
+                Intent intent = new Intent(MainActivity.this, GetCarAvailabilityActivity.class);
                 startActivity(intent);
             }
         });

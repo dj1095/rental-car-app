@@ -4,7 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GetCarAvailabilityActivity">
+    tools:context=".CreateBookingActivity"
+    tools:layout_editor_absoluteX="-112dp"
+    tools:layout_editor_absoluteY="-269dp">
 
+    <EditText
+        android:id="@+id/bookDate"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Booking Date "
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/returnDate"
+        app:layout_constraintEnd_toStartOf="@+id/returnDate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/returnDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="75dp"
+        android:ems="10"
+        android:hint="Return Date"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnGetAvailiability"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bookDate"
+        app:layout_constraintTop_toBottomOf="@+id/rentalCategory" />
+
+    <Button
+        android:id="@+id/btnGetAvailiability"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:text="GetAvailability"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/rentalCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="79dp"
+        android:ems="10"
+        android:hint="Rental Category"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rentalType"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/rentalType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Rental Type"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/rentalCategory"
+        app:layout_constraintEnd_toStartOf="@+id/rentalCategory"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

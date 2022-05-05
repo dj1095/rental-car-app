@@ -12,4 +12,12 @@
         <item>Basic</item>
         <item>Luxury</item>
     </string-array>
-    </resources>
+    <string-array name="vehicleType">
+        <item>Compact</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>SUV</item>
+        <item>Truck</item>
+        <item>Van</item>
+    </string-array>
+</resources>
